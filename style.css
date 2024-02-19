@@ -1,0 +1,145 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-image: url('images/menulog.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.menu{
+  display: flex;
+}
+.menu img{
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+.menu h1{
+  margin: 10px;
+}
+.uptxt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uptxt img{
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+.cardcontainer{
+  display: flex;
+  height: 250px;
+  align-items: center;
+}
+.card{
+  border-radius: 7%;
+  overflow: hidden;
+  margin: 5px;
+}
+.card img{
+  display: block;
+  border-radius: 7%;
+  width: 90%;
+  height: auto;
+  opacity: 1;
+  transition: width 0.5s,opacity 0.5s;
+  margin: auto;
+  border: 1px solid white;
+}
+.cardcontainer:hover img{
+  width: 80%;
+  opacity: 0.5;
+}
+.card img:hover{
+  width: 100%;
+  opacity: 1;
+}
+.infocardcontainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.infocard{
+  display: flex;
+  align-items: center;
+  height: 150px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 0px 0px;
+  transition: box-shadow 150ms;
+  background-color: rgba(0,0,0,0.5);
+}
+.infocard:hover{
+  box-shadow: 0px 0px 10px 0px white;
+}
+.infoimg{
+  position: relative;
+}
+.infoimg img{
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+.overlay{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 100px;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 150ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay:hover{
+  opacity: 1;
+}
+.overlay img{
+  height: 50px;
+  width: 50px;
+}
+.artistcont{
+  display: flex;
+}
+.artistcard{
+  position: relative;
+  display: flex;
+  height: 200px;
+  width: 200px;
+  margin-left: 10px;
+  border: 4px solid white;
+  border-radius: 100px;
+  overflow: hidden;
+  background-image: url('images/artist1.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+}
+.artistimg{
+  top: 20;
+  left: 20;
+  height: 200px;
+  width: 200px;
+  filter: blur(0px);
+  transition: filter 150ms;
+}
+.artisttxt{
+  position: absolute;
+  margin-top: 300px;
+  transition: margin-top 150ms;
+}
+.artistcard:hover .artisttxt{
+  margin-top: 0px;
+  
+}
+.artistcard:hover .artistimg{
+  filter: blur(5px);
+}
